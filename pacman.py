@@ -365,12 +365,12 @@ def draw_elements(): # отрисовка фигур и текста
         pygame.draw.rect(screen, 'white', [50, 200, 800, 300],0, 10)
         pygame.draw.rect(screen, 'dark gray', [70, 220, 760, 260], 0, 10)
         gameover_text = font.render('Game over! Space bar to restart!', True, 'red')
-        screen.blit(gameover_text, (100, 300))
+        screen.blit(gameover_text, (280, 330))
     if game_won:
         pygame.draw.rect(screen, 'white', [50, 200, 800, 300],0, 10)
         pygame.draw.rect(screen, 'dark gray', [70, 220, 760, 260], 0, 10)
         gameover_text = font.render('Victory! Space bar for a new game!', True, 'green')
-        screen.blit(gameover_text, (100, 300))
+        screen.blit(gameover_text, (270, 330))
 
 def check_collisions(scor, power, power_count, eaten_ghosts):
     num1 = (HEIGHT - 50) // 32
