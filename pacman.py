@@ -793,12 +793,3 @@ while run:
 
     pygame.display.flip()
 pygame.quit()
-
-blinky
-blink
-inky
-ink
-pinky
-pink
-clyde
-clyd
