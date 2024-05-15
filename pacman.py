@@ -84,7 +84,6 @@ def variables():
         direction_command, red_x, red_y, red_direction, blue_x, blue_y, blue_direction, \
         pink_x, pink_y, pink_direction, orange_x, orange_y, orange_direction, eaten_ghost, \
         red_dead, blue_dead, orange_dead, pink_dead
-    
     powerup = False
     power_counter = 0
     startup_counter = 0
@@ -430,7 +429,7 @@ def draw_player():
     elif direction == 3:
         screen.blit(pygame.transform.rotate(player_images[counter // 5], 270), (player_x, player_y))
 
-def check_position(centerx, centery): # проверка столкновений относительно центра х и центра у
+def check_position(centerx, centery):
     turns = [False, False, False, False]
     num1 = (HEIGHT - 50) // 32
     num2 = (WIDTH // 30)
